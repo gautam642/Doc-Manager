@@ -1,0 +1,37 @@
+/* docmanager.css */
+
+/* Styling for the table */
+table {
+    width: 60vw; /* Adjust width as needed */
+    margin: 20px 100px 0px 20px; /* Center the table */
+  }
+  
+  /* Styling for the FileUploader */
+  .guZdik   {
+    width: 200px; /* Adjust width as needed */
+    height:50vh;
+    margin:20px;
+    /* background:red; */
+  }
+  
+  form div input{
+    border-radius:5px;
+    border:solid 0.5px grey;
+    margin-left:20px;
+  }
+  button {
+    margin-top: 10px;
+    margin-left:20px; /* Adjust margin as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded border */
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  

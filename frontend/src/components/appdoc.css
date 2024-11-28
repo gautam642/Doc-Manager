@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at 30% 50%, #a8edea, #85d8ce, #6fc3df, #4ca1af, #2e8bc0);
+    background-size: 300% 300%;
+    animation: gradientAnimation 12s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Main App Container */
+.app-doc {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section */
+h1 {
+    font-size: 2.5rem;
+    color: #0078a0; /* Muted blue for the main heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #015d67; /* Teal color for subheadings */
+    margin: 20px 0 10px;
+    text-align: center;
+    border-bottom: 2px solid #64b5f6; /* Light blue accent */
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    background-color: #64b5f6; /* Soft blue for table headers */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+a {
+    color: #0078a0; /* Link color matching the heading */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #015d67; /* Teal hover for links */
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #64b5f6, #0288d1); /* Soft blue gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0288d1, #015d67); /* Teal gradient on hover */
+    transform: scale(1.05);
+}
+
+/* File Uploader */
+.file-uploader {
+    border: 2px dashed #0288d1; /* Soft blue border */
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.1rem;
+    color: #0288d1;
+    background: #ffffff; /* Start with white */
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+.file-uploader:hover {
+    background: #e3f2fd; /* Light blue background on hover */
+    transform: scale(1.02); /* Subtle zoom effect */
+    border-color: #015d67; /* Darker teal border on hover */
+}
+
+.file-uploader input[type="file"] {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .file-uploader {
+        padding: 30px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
