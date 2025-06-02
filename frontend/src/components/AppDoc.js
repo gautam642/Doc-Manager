@@ -109,8 +109,8 @@ function AppDoc() {
                     url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
                     data: fileData,
                     headers: {
-                        pinata_api_key: "6022956191505df3cffa",
-                        pinata_secret_api_key: "5b7cca4f723165bf53abba4022086e2cec669c70ab889824a6fbd7e2076f223d",
+                        pinata_api_key: process.env.REACT_APP_PINATA_API_KEY,
+                        pinata_secret_api_key: process.env.REACT_APP_PINATA_SECRET_API_KEY,
                         "Content-Type": "multipart/form-data",
                     },
                 });
@@ -121,7 +121,7 @@ function AppDoc() {
                 // Save metadata in MongoDB
                 const token = localStorage.getItem("token");
                 await axios.post(
-                    "http://localhost:5000/file/upload",
+                    `${process.env.REACT_APP_API_BASE_URL}/file/upload`,
                     { name: fileName, link: fileUrl },
                     {
                         headers: {
